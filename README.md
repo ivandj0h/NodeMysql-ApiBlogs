@@ -1,5 +1,5 @@
 # Node Mysql Blog
-This project is a starting point for a TypeScript based React app that also has a local API server using express.
+This is Api Blog was create using NodeJS for the backend, Mysql for the RDBMS and ReactJS for the frontend and this project is a starting point for a TypeScript based React app that also has a local API server using express.
 
 There are 2 different Webpack configurations. One for the server and one for the client.
 
