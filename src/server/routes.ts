@@ -19,6 +19,16 @@ router.get('/api/blogs', async (req, res) => {
         console.log(e);
         res.sendStatus(500);
     }
-})
+});
+
+router.get('/api/blogs/:id', async (req, res) => {
+    try {
+        res.json((await dbase.Blogs.one(req.params.id))[0]);
+    }
+    catch(e) {
+        console.log(e);
+        res.sendStatus(500);
+    }
+});
 
 export default router;
